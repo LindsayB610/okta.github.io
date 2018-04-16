@@ -98,6 +98,9 @@ export default class App extends React.Component {
   constructor() {
     super();
     this.state = { authenticated: false };
+    this.checkAuthentication = this.checkAuthentication.bind(this);
+    this.login = this.login.bind(this);
+    this.logout = this.logout.bind(this);
   }
 
   async componentDidMount() {
